@@ -23,3 +23,5 @@ for i in range(len(katet_list1)):
     else:
         c = (int(katet_list1[i])**2 + int(katet_list2[i])**2)**0.5
         print(f"Треугольник {i+1} c катетами {katet_list1[i]} и {katet_list2[i]} имеет площадь {S} и гипотенузу {c}")
+
+
