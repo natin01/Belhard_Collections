@@ -16,4 +16,10 @@ print(katet_list1)
 print(len(katet_list1))
 
 for i in range(len(katet_list1)):
-    print(f"Треугольник {i+1} c катетами {katet_list1[i]} и {katet_list2[i]}")
+    try:
+        S = int(katet_list1[i]) * int(katet_list2[i]) / 2
+    except:
+        raise RuntimeError("NonNumericError")
+    else:
+        c = (int(katet_list1[i])**2 + int(katet_list2[i])**2)**0.5
+        print(f"Треугольник {i+1} c катетами {katet_list1[i]} и {katet_list2[i]} имеет площадь {S} и гипотенузу {c}")
